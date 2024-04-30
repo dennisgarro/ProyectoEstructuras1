@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         LinkedList<Empleado> listaEmpleados = new LinkedList<>();
-        String cadena = "";
+        Mostrar m = new Mostrar();
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             Empleado empleado = new Empleado(null, null, null, 0, null);
@@ -19,17 +19,13 @@ public class Main {
             empleado.setDireccion(sc.next());
             System.out.println("Ingrese la Edad");
             empleado.setEdad(sc.nextInt());
-            System.out.println("Ingrese el Cargo");
+            System.out.println("DennIngrese el Cargo");
             empleado.setCargo(sc.next());
             listaEmpleados.add(empleado);
 
         }
-
-        for (Empleado empleado : listaEmpleados) {
-            cadena = cadena + empleado.getApellido() + "\n" + empleado.getNombre()  + "\n" + empleado.getDireccion()+ "\n"
-            + empleado.getEdad() + "\n" + empleado.getCargo() + "\n";    
-        }
-        JOptionPane.showMessageDialog(null, cadena);
+       m.mostrar(listaEmpleados);
+        
 
     }
 }
