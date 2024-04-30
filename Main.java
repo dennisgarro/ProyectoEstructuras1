@@ -11,15 +11,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
             Empleado empleado = new Empleado(null, null, null, 0, null);
-            System.out.println("Ingrese el nombre");
+            System.out.println("Ingrese el Nombre");
             empleado.setNombre(sc.next());
-            System.out.println("Ingrese el apellido");
+            System.out.println("Ingrese el Apellido");
             empleado.setApellido(sc.next());
             System.out.println("Ingrese la Direccion");
             empleado.setDireccion(sc.next());
-            System.out.println("Ingrese la edad");
+            System.out.println("Ingrese la Edad");
             empleado.setEdad(sc.nextInt());
-            System.out.println("Ingrese el cargo");
+            System.out.println("Ingrese el Cargo");
             empleado.setCargo(sc.next());
             listaEmpleados.add(empleado);
 
